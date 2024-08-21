@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+body {
+    background-color: #C0C4FC;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Main Quiz Section */
+.quiz-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h2,
+ul,
+.btn {
+    padding: 1rem;
+}
+
+#quiz {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    /* padding: 2rem ; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    /* margin-bottom: 1.5rem; */
+    text-align: left;
+}
+
+
+ul>li {
+    padding: 0.8rem;
+    border: 1px solid #e7e5e5;
+    border-radius: 1.5rem;
+    margin: 0.8rem 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    width: 50%;
+}
+
+ul>li:hover {
+    background-color: #A2C1F8;
+    border-color: #A2C1F8;
+    color: #fff;
+}
+
+li {
+    list-style-type: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+/* Button styling */
+.btn {
+    /* text-align: center; */
+}
+
+button {
+    padding: 0.8rem 2rem;
+    border-radius: 0.7rem;
+    background-color: #A2C1F8;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #89aef2;
+    transform: translateY(-3px);
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    ul>li {
+        padding: 0.6rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+.result {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.result h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+/* Paragraph styling in result section */
+.result p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Reload button styling */
+.reload-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #89aef2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reload-button:hover {
+    background-color: #45a049;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and medium screens */
+@media (max-width: 768px) {
+    .result h2 {
+        font-size: 1.75rem;
+    }
+
+    .result p {
+        font-size: 1.1rem;
+    }
+
+    .reload-button {
+        padding: 8px 16px;
+        font-size: 1.1rem;
+    }
+}
